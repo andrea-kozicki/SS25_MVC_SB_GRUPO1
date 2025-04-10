@@ -14,10 +14,10 @@ import com.pucpralunos.abrigo.models.Cachorro;
 public class CachorroDAO {
 
     // private List<Cachorro> cachorros = new ArrayList<>();
-    private static final String URL = "jdbc:mysql://localhost:3306/banco1";
+    private static final String URL = "jdbc:mysql://127.0.0.1:3306/softwareSeguro";
     private static final String USUARIO = "root";
-    private static final String SENHA = "";
-
+    private static final String SENHA = "PUC@1234";
+    
     public void addCachorro(String nome, String raca) {
         String sql = "INSERT INTO cachorros (nome, raca) VALUES (?, ?)";
 
