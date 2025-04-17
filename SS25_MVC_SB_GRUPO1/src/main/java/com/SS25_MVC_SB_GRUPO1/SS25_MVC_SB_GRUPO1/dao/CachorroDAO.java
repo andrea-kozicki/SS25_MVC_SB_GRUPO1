@@ -1,4 +1,4 @@
-package com.pucpralunos.abrigo.dao;
+package com.SS25_MVC_SB_GRUPO1.SS25_MVC_SB_GRUPO1.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +9,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.pucpralunos.abrigo.models.Cachorro;
+import com.SS25_MVC_SB_GRUPO1.SS25_MVC_SB_GRUPO1.models.Cachorro;
 
 public class CachorroDAO {
 

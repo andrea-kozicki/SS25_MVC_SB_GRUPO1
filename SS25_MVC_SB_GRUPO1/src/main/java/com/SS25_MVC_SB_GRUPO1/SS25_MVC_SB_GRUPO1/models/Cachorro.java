@@ -1,4 +1,4 @@
-package com.pucpralunos.abrigo.models;
+package com.SS25_MVC_SB_GRUPO1.SS25_MVC_SB_GRUPO1.models;
 
 public class Cachorro {
     private String nome;

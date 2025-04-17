@@ -1,18 +1,22 @@
-package com.pucpralunos.abrigo.controllers;
+package com.SS25_MVC_SB_GRUPO1.SS25_MVC_SB_GRUPO1.controllers;
+
+import com.SS25_MVC_SB_GRUPO1.SS25_MVC_SB_GRUPO1.services.CachorroService;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import com.pucpralunos.abrigo.dao.CachorroDAO;
-import com.pucpralunos.abrigo.models.Cachorro;
+import com.SS25_MVC_SB_GRUPO1.SS25_MVC_SB_GRUPO1.dao.CachorroDAO;
+import com.SS25_MVC_SB_GRUPO1.SS25_MVC_SB_GRUPO1.models.Cachorro;
 
 @RestController
 @RequestMapping("/cachorros")
 @CrossOrigin(origins = "*")
 public class CachorroController {
-    private CachorroService service = new CachorroService();
+
+    @Autowired
+    private CachorroService service;
 
     @PostMapping("/cadastrar")
     public void cadastrarCachorro(@RequestParam String nome, @RequestParam String raca) {
@@ -24,4 +28,3 @@ public class CachorroController {
         return service.listar();
     }
 }
-
